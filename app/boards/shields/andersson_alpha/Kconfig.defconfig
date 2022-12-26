@@ -1,0 +1,29 @@
+if SHIELD_ANDERSSON_ALPHA_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "Andersson Alpha"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_ANDERSSON_ALPHA_LEFT || SHIELD_ANDERSSON_ALPHA_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+if ZMK_DISPLAY
+
+config I2C
+	default y
+
+config SSD1306
+	default y
+
+config SSD1306_REVERSE_MODE
+	default y
+
+endif
+
+endif

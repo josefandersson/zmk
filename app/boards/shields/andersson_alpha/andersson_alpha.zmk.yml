@@ -1,0 +1,14 @@
+file_format: "1"
+id: andersson_alpha
+name: Andersson Alpha
+type: shield
+url: https://git.josf.dev/josefandersson/keyboard/src/branch/master/andersson_alpha
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - underglow
+siblings:
+  - andersson_alpha_left
+  - andersson_alpha_right
