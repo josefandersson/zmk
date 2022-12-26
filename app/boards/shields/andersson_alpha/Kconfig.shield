@@ -1,0 +1,5 @@
+config SHIELD_ANDERSSON_ALPHA_LEFT
+	def_bool $(shields_list_contains,andersson_alpha_left)
+
+config SHIELD_ANDERSSON_ALPHA_RIGHT
+	def_bool $(shields_list_contains,andersson_alpha_right)
