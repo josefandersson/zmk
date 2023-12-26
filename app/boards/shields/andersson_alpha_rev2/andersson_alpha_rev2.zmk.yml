@@ -1,0 +1,14 @@
+file_format: "1"
+id: andersson_alpha_rev2
+name: Andersson Alpha rev 2
+type: shield
+url: https://git.josf.dev/josefandersson/keyboard/src/branch/master/andersson_alpha/rev2
+requires: [pro_micro]
+exposes: []
+features:
+  - keys
+  - display
+  - underglow
+siblings:
+  - andersson_alpha_rev2_left
+  - andersson_alpha_rev2_right
