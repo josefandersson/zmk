@@ -5,6 +5,8 @@
 
 // ! Made for the default Swedish keymap
 
+// Build: west build -b nice_nano_v2 -- -DSHIELD=andersson_alpha_rev2_left
+
 // (
 #define SV_LPAR LS(N8)
 // )
@@ -95,7 +97,7 @@
 			label = "shift caps adjust";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&mt LSHIFT CAPSLOCK>, <&mo 2>;
+			bindings = <&mt LSHIFT CAPSLOCK>, <&mo ADJUST>;
 		};
 
 		td_low_adj: td_low_adj {
@@ -135,10 +137,10 @@
 			//                         | ADJ | LOW | SPACE | CAPS | # | RETURN | BKSPC | RAI | PLPA |
 
 			bindings = <
-&kp ESC  &kp Q       &kp W       &kp F        &kp P         &kp P                                                                  &kp J      &kp L             &kp U        &kp Y       &kp SV_OE    &kp SV_AO
+&kp ESC  &kp Q       &kp W       &kp F        &kp P         &kp B                                                                  &kp J      &kp L             &kp U        &kp Y       &kp SV_OE    &kp SV_AO
 &kp TAB  &hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHIFT T  &kp G                                                                  &kp M      &hm RSHIFT N      &hm RCTRL E  &hm LALT I  &hm RGUI O   &kp SV_AE
          &kp Z       &kp X       &kp C        &kp D         &kp V                                                                  &kp K      &kp H             &kp COMMA    &kp DOT     &kp SV_DASH
-                                              &mo ADJUST    &mo LOWER  &kp SPACE  &td_mt_shft_cps_rais     &kp RET  &kp BACKSPACE  &mo RAISE  &kp C_PLAY_PAUSE
+                                              &mo ADJUST    &td_low_adj  &kp SPACE  &td_mt_shft_cps_rais     &kp RET  &kp BACKSPACE  &mo RAISE  &kp C_PLAY_PAUSE
 			>;
 		};
 
