@@ -1,7 +1,7 @@
 if SHIELD_ANDERSSON_ALPHA_REV2_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "Andersson Alpha rev 2"
+	default "Alpha r.2"
 
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
@@ -12,6 +12,16 @@ if SHIELD_ANDERSSON_ALPHA_REV2_LEFT || SHIELD_ANDERSSON_ALPHA_REV2_RIGHT
 
 config ZMK_SPLIT
 	default y
+
+if ZMK_BACKLIGHT
+
+config PWM
+	default y
+
+config LED_GPIO
+	default y
+
+endif # ZMK_BACKLIGHT
 
 if ZMK_DISPLAY
 
